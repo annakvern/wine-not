@@ -2,11 +2,15 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Lato', 'sans-serif';
   margin: 0;
   padding: 0;
-  background-color: #eab2bb;
+  background-color: ${({ theme }) => theme.colors.body};
   color: #3c6ca8;
 }
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   font-family: "Abril fatface", "serif";
-  background-color: #eab2bb;
+  background-color: ${({ theme }) => theme.colors.header};
   padding: 1rem 0;
   display: flex;
   justify-content: center;
