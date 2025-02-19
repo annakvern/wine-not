@@ -11,6 +11,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: ${({ theme }) => theme.colors.body};
-  color: #3c6ca8;
+  color: ${({ theme }) => theme.colors.blueText};
 }
 `;
