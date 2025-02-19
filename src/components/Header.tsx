@@ -5,10 +5,10 @@ export default function Header() {
     <StyledHeader>
       <div>
         <h1>Wine Not?</h1>
-        <span>Wine Tasting for Winies</span>
+        <span>Wine Tasting for Darlings</span>
       </div>
 
-      <img src="../public/images/logo.png" alt="logo"></img>
+      <img src="./images/logo.png" alt="logo"></img>
     </StyledHeader>
   );
 }

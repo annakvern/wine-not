@@ -3,7 +3,6 @@ import { StyledWineCard } from "./styles/WineCard.styled";
 interface Props {
   imageUrl: string;
   title: string;
-  type: string;
   year: number;
   origin: string;
   price: number;
@@ -18,15 +17,13 @@ export default function WineCard(props: Props) {
       <div>
         <h3>{props.title}</h3>
         <span>Nr {props.id}</span>
-        <p>
-          {props.type}, {props.year}
-        </p>
+        <p>{props.year}</p>
         <p>{props.origin}</p>
         <div>
           <span>{props.price}:-</span>
           <span>{props.size}ml</span>
 
-          <span>{props.volume} % vol.</span>
+          <span>{props.volume} %</span>
         </div>
       </div>
     </StyledWineCard>

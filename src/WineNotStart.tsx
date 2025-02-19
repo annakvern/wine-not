@@ -9,7 +9,7 @@ const theme = {
   colors: {
     header: "#eab2bb",
     body: "#fffcf6",
-    footer: "#5eb090",
+    green: "#5eb090",
     blueText: "#3c6ca8",
     creme: "#efe7dd",
   },

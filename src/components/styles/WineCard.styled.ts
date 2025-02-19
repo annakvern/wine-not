@@ -16,4 +16,9 @@ export const StyledWineCard = styled.div`
     padding-right: 1rem;
     font-size: 0.8rem;
   }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.green};
+    color: ${({ theme }) => theme.colors.creme};
+  }
 `;
