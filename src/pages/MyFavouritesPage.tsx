@@ -1,12 +1,12 @@
 import WineCard from "../components/WineCard";
-import { StyledExploreWinesPage } from "../components/styles/ExploreWinesPage.styled";
+import { StyledMyFavouritesPage } from "../components/styles/MyFavouritesPage.styled";
 import { Container } from "../components/styles/Container.styled";
 
-export default function ExploreWinesPage() {
+export default function MyFavouritesPage() {
   return (
-    <StyledExploreWinesPage>
+    <StyledMyFavouritesPage>
       <section>
-        <h2> My favourite wines right now</h2>
+        <h2> My favourite whites</h2>
         <Container>
           <WineCard
             imageUrl="https://product-cdn.systembolaget.se/productimages/42953831/42953831_800.png"
@@ -40,7 +40,42 @@ export default function ExploreWinesPage() {
           />
         </Container>
       </section>
-    </StyledExploreWinesPage>
+      <section>
+        <h2>My favourite reds</h2>
+        <Container>
+          <WineCard
+            imageUrl="https://product-cdn.systembolaget.se/productimages/28073432/28073432_800.webp"
+            title="Montebruna Barbera d'Asti"
+            year={2022}
+            origin="Italy"
+            price={229}
+            size={750}
+            volume={15}
+            id={94152}
+          />
+          <WineCard
+            imageUrl="https://product-cdn.systembolaget.se/productimages/23458751/23458751_800.webp"
+            title="Three Finger Jack"
+            year={2022}
+            origin="USA, California"
+            price={154}
+            size={750}
+            volume={14.5}
+            id={3528}
+          />
+          <WineCard
+            imageUrl="https://product-cdn.systembolaget.se/productimages/16864/16864_800.webp"
+            title="Masi Costasera"
+            year={2019}
+            origin="Italy"
+            price={349}
+            size={750}
+            volume={15}
+            id={2345}
+          />
+        </Container>
+      </section>
+    </StyledMyFavouritesPage>
   );
 }
 
