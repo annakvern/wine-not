@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const StyledWineCard = styled.div`
   display: flex;
+  background-color: ${({ theme }) => theme.colors.creme};
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 21rem;
 
   img {
     height: 20rem;
@@ -9,6 +13,7 @@ export const StyledWineCard = styled.div`
   }
 
   span {
-    padding-right: 0.5rem;
+    padding-right: 1rem;
+    font-size: 0.8rem;
   }
 `;

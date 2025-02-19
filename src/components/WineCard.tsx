@@ -17,6 +17,7 @@ export default function WineCard(props: Props) {
       <img src={props.imageUrl} alt={props.title}></img>
       <div>
         <h3>{props.title}</h3>
+        <span>Nr {props.id}</span>
         <p>
           {props.type}, {props.year}
         </p>
@@ -24,8 +25,8 @@ export default function WineCard(props: Props) {
         <div>
           <span>{props.price}:-</span>
           <span>{props.size}ml</span>
+
           <span>{props.volume} % vol.</span>
-          <span>Nr {props.id}</span>
         </div>
       </div>
     </StyledWineCard>

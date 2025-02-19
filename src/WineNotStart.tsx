@@ -11,7 +11,7 @@ const theme = {
     body: "#fffcf6",
     footer: "#5eb090",
     blueText: "#3c6ca8",
-    cremeText: "#efe7dd",
+    creme: "#efe7dd",
   },
 };
 

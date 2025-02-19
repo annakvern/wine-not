@@ -7,5 +7,5 @@ export const StyledFooter = styled.footer`
   position: fixed;
   bottom: 0;
   width: 100vw;
-  color: ${({ theme }) => theme.colors.cremeText};
+  color: ${({ theme }) => theme.colors.creme};
 `;
