@@ -3,6 +3,7 @@ import { GlobalStyles } from "./components/styles/GlobalStyles";
 import { Container } from "./components/styles/Container.styled";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ExploreWinesPage from "./pages/ExploreWinesPage";
 
 const theme = {
   colors: {
@@ -21,7 +22,7 @@ export default function WineNotStart() {
         <GlobalStyles />
         <Header />
         <Container>
-          <h1>Hello world!</h1>
+          <ExploreWinesPage />
         </Container>
         <Footer />
       </>
