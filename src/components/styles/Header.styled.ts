@@ -4,9 +4,30 @@ export const StyledHeader = styled.header`
   font-family: "Abril fatface", "serif";
   background-color: #eab2bb;
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   h1 {
     color: #3c6ca8;
     font-size: 4rem;
+    margin: 0;
+  }
+  img {
+    width: 100px;
+    height: 150px;
+  }
+  span {
+    font-family: "Lato", "sans-serif";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #efe7dd;
+    //color: #fffcf6;
   }
 `;
