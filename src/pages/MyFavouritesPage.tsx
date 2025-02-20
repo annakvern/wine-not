@@ -1,12 +1,13 @@
 import WineCard from "../components/WineCard";
 import { StyledMyFavouritesPage } from "../components/styles/MyFavouritesPage.styled";
 import { Container } from "../components/styles/Container.styled";
+import Button from "../components/Button";
 
 export default function MyFavouritesPage() {
   return (
     <StyledMyFavouritesPage>
       <section>
-        <h2> My favourite whites</h2>
+        <h2>My favourite whites</h2>
         <Container>
           <WineCard
             imageUrl="https://product-cdn.systembolaget.se/productimages/42953831/42953831_800.png"
@@ -75,6 +76,9 @@ export default function MyFavouritesPage() {
           />
         </Container>
       </section>
+      <div>
+        <Button>Back to home</Button>
+      </div>
     </StyledMyFavouritesPage>
   );
 }

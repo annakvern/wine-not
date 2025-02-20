@@ -3,8 +3,7 @@ import { GlobalStyles } from "./components/styles/GlobalStyles";
 import { Container } from "./components/styles/Container.styled";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-//import MyFavouritesPage from "./pages/MyFavouritesPage";
-import LandingPage from "./pages/LandingPage";
+import { Outlet } from "react-router";
 
 const theme = {
   colors: {
@@ -16,14 +15,14 @@ const theme = {
   },
 };
 
-export default function WineNotStart() {
+export default function WineNotLayout() {
   return (
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
         <Header />
         <Container>
-          <LandingPage />
+          <Outlet />
         </Container>
         <Footer />
       </>

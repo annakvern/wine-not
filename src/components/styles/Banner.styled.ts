@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledBanner = styled.div`
   display: flex;
   margin: 4rem 0;
-  background-color: ${({ theme }) => theme.colors.creme};
+  background-color: ${({ theme }) => theme.colors.header};
   padding: 3rem;
   width: 980px;
   border-radius: 3rem;
@@ -25,6 +25,6 @@ export const StyledBanner = styled.div`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.header};
+    background-color: ${({ theme }) => theme.colors.green};
   }
 `;

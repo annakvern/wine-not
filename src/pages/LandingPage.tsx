@@ -7,11 +7,13 @@ export default function LandingPage() {
         imageUrl="images/bubbles.jpg"
         headline="Bubbly Wine Tasting"
         fineprint="Invite your friends!"
+        linkTo="/"
       />
       <Banner
         imageUrl="images/red-white.jpg"
         headline="My favourite wines"
         fineprint="Enjoy!"
+        linkTo="/my-favourites"
       />
     </div>
   );
