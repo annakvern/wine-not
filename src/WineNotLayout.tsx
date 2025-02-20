@@ -22,7 +22,9 @@ export default function WineNotLayout() {
         <GlobalStyles />
         <Header />
         <Container>
-          <Outlet />
+          <main>
+            <Outlet />
+          </main>
         </Container>
         <Footer />
       </>
