@@ -16,7 +16,7 @@ export const StyledHeader = styled.header`
 
   h1 {
     color: #3c6ca8;
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 0;
   }
   img {

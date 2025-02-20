@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router";
 
 export const StyledBanner = styled.div`
   display: flex;
@@ -25,6 +26,14 @@ export const StyledBanner = styled.div`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.green};
+    border: 3px;
+    border-style: solid;
+    border-color: ${({ theme }) => theme.colors.green};
   }
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  display: block;
 `;

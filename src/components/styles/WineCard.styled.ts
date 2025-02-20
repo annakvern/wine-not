@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledWineCard = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colors.creme};
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   max-width: 21rem;
 
@@ -18,7 +18,8 @@ export const StyledWineCard = styled.div`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.green};
-    color: ${({ theme }) => theme.colors.creme};
+    border: 3px;
+    border-style: solid;
+    border-color: ${({ theme }) => theme.colors.green};
   }
 `;

@@ -1,5 +1,5 @@
-import { Link } from "react-router";
 import { StyledBanner } from "./styles/Banner.styled";
+import { StyledLink } from "./styles/Banner.styled";
 
 interface Props {
   headline: string;
@@ -7,9 +7,10 @@ interface Props {
   fineprint: string;
   linkTo: string;
 }
+
 export default function Banner(props: Props) {
   return (
-    <Link to={props.linkTo}>
+    <StyledLink to={props.linkTo}>
       <StyledBanner>
         <img src={props.imageUrl} alt={props.headline}></img>
         <div>
@@ -17,6 +18,6 @@ export default function Banner(props: Props) {
           <span>{props.fineprint}</span>
         </div>
       </StyledBanner>
-    </Link>
+    </StyledLink>
   );
 }
