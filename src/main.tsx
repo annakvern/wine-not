@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")!).render(
           <Route index element={<LandingPage />}></Route>
           <Route path="/my-favourites" element={<MyFavouritesPage />}></Route>
           <Route path="/tasting" element={<TastingPage />}></Route>
-          <Route path="/browsing" element={<BrowsingPage />}></Route>
+          <Route path="/browse" element={<BrowsingPage />}></Route>
           <Route path="*" element={<NotFoundPage />}></Route>
         </Route>
       </Routes>

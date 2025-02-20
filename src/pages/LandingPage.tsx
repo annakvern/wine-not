@@ -4,16 +4,22 @@ export default function LandingPage() {
   return (
     <div>
       <Banner
-        imageUrl="images/bubbles.jpg"
+        imageUrl="images/taste.png"
         headline="Bubbly Wine Tasting"
         fineprint="Invite your friends!"
         linkTo="/"
       />
       <Banner
-        imageUrl="images/red-white.jpg"
+        imageUrl="images/fav.png"
         headline="My favourite wines"
         fineprint="Enjoy!"
         linkTo="/my-favourites"
+      />
+      <Banner
+        imageUrl="images/browse.png"
+        headline="Browse nice wines"
+        fineprint="Find your favourite!"
+        linkTo="/browse"
       />
     </div>
   );
