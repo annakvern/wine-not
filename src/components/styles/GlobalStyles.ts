@@ -6,11 +6,20 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
-body {
+body, #root {
   font-family: 'Lato', 'sans-serif';
   margin: 0;
   padding: 0;
   background-color: ${({ theme }) => theme.colors.body};
   color: ${({ theme }) => theme.colors.blueText};
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+main {
+  flex-grow: 1;
+ 
 }
 `;

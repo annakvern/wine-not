@@ -15,10 +15,12 @@ const theme = {
   },
 };
 
-export default function WineNotLayout() {
+export default function SipHappensLayout() {
   return (
     <ThemeProvider theme={theme}>
-      <>
+      <div
+        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      >
         <GlobalStyles />
         <Header />
         <Container>
@@ -27,7 +29,7 @@ export default function WineNotLayout() {
           </main>
         </Container>
         <Footer />
-      </>
+      </div>
     </ThemeProvider>
   );
 }

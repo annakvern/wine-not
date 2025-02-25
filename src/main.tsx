@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
 import NotFoundPage from "./pages/NotFoundPage.tsx";
-import WineNotStart from "./WineNotLayout.tsx";
+import WineNotStart from "./SipHappensLayout.tsx";
 import LandingPage from "./pages/LandingPage.tsx";
 import MyFavouritesPage from "./pages/MyFavouritesPage.tsx";
 import TastingPage from "./pages/RandomDrinkPage.tsx";

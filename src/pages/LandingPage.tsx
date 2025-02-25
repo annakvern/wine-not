@@ -5,19 +5,19 @@ export default function LandingPage() {
     <div>
       <Banner
         imageUrl="images/taste.png"
-        headline="Bubbly Wine Tasting"
-        fineprint="Invite your friends!"
+        headline="Drinks with sparkle!"
+        fineprint="Twinkle twinkle little star"
         linkTo="/"
       />
       <Banner
         imageUrl="images/fav.png"
-        headline="My favourite wines"
-        fineprint="Enjoy!"
+        headline="Can't decide?"
+        fineprint="Let me decide for you..."
         linkTo="/my-favourites"
       />
       <Banner
         imageUrl="images/browse.png"
-        headline="Browse nice wines"
+        headline="Browse drinks"
         fineprint="Find your favourite!"
         linkTo="/browse"
       />

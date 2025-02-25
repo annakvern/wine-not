@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <StyledHeader>
       <div>
-        <h1>Wine Not?</h1>
-        <span>Wine Tasting for Darlings</span>
+        <h1>Sip Happens!</h1>
+        <span>Sip happens, just sip it.</span>
       </div>
 
       <img src="./images/logo.png" alt="logo"></img>
