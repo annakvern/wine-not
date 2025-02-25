@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const StyledBrowsingPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+
   form {
     width: 300px;
     display: flex;
@@ -48,5 +54,13 @@ export const StyledBrowsingPage = styled.div`
         border-color: ${({ theme }) => theme.colors.green};
       }
     }
+  }
+  .drink-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
   }
 `;

@@ -4,7 +4,7 @@
 // www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
 //
 
-interface Drink {
+export interface Drink {
   idDrink: string;
   strDrink: string;
   strCategory?: string;

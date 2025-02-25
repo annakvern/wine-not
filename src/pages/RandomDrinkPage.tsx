@@ -19,7 +19,7 @@ export default function RandomDrinkPage() {
               <p>{drink.strCategory}</p>
               <p>{drink.strAlcoholic}</p>
               <p>{drink.strInstructions}</p>
-              <img src={drink.strDrinkThumb} alt={drink.strDrinkThumb} />
+              <img src={drink.strDrinkThumb} alt={drink.strDrink} />
             </div>
           ))}
         </div>

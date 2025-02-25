@@ -3,6 +3,7 @@ import { StyledBrowsingPage } from "../components/styles/BrowsingPage.styled";
 import { useQuery } from "@tanstack/react-query";
 import { fetchDrinksByLetter } from "../api";
 import { useState } from "react";
+import DrinkCard from "../components/DrinkCard";
 
 interface SearchForm {
   searchPhrase: string;
@@ -50,7 +51,7 @@ export default function BrowsingPage() {
       {isLoading && <p>Loading your drinks...</p>}
       {error && <p>There was an error fetching your drinks, sorry!</p>}
 
-      <div>
+      <div className="drink-list">
         {data?.drinks
           ?.filter((drink) =>
             isAlcoholic
@@ -58,7 +59,7 @@ export default function BrowsingPage() {
               : drink.strAlcoholic === "Non alcoholic"
           )
           .map((drink) => (
-            <h1>{drink.strDrink}</h1>
+            <DrinkCard key={drink.idDrink} drink={drink} />
           ))}
       </div>
     </StyledBrowsingPage>
