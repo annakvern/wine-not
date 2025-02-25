@@ -3,10 +3,6 @@
 //Search cocktail by name
 // www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
 //
-export interface Criteria {
-  searchPhrase: string;
-  isAlcoholic: boolean;
-}
 
 interface Drink {
   idDrink: string;
@@ -35,9 +31,11 @@ export async function fetchRandomDrink(): Promise<{ drinks: Drink[] }> {
   return data;
 }
 
-export async function fetchDrinksForSearch(): Promise<{ drinks: Drink[] }> {
+export async function fetchDrinksByLetter(
+  letter: string
+): Promise<{ drinks: Drink[] }> {
   const response = await fetch(
-    "www.thecocktaildb.com/api/json/v1/1/search.php?f=a",
+    "www.thecocktaildb.com/api/json/v1/1/search.php?f=${letter}",
     {
       headers: {
         Accept: "application/json",

@@ -1,13 +1,18 @@
 import { useForm } from "react-hook-form";
-import { Criteria } from "../api";
 import { StyledBrowsingPage } from "../components/styles/BrowsingPage.styled";
-StyledBrowsingPage;
+import { useQuery } from "@tanstack/react-query";
+import { fetchDrinksByLetter } from "../api";
+
+interface SearchForm {
+  searchPhrase: string;
+  isAlcoholic: boolean;
+}
 
 export default function BrowsingPage() {
-  const { register, handleSubmit } = useForm<Criteria>();
+  const { register, handleSubmit } = useForm<SearchForm>();
 
-  const executeSearch = (criteria: Criteria) => {
-    console.log(criteria);
+  const executeSearch = (formInput: SearchForm) => {
+    console.log("Form submitted with data:", formInput);
   };
 
   return (
@@ -15,7 +20,7 @@ export default function BrowsingPage() {
       <form onSubmit={handleSubmit(executeSearch)}>
         <input
           type="text"
-          placeholder="The letter your drink starts with..."
+          placeholder="The letter your drink starts with is..."
           {...register("searchPhrase")}
         />
         <div>

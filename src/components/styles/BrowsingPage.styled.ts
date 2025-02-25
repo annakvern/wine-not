@@ -41,8 +41,10 @@ export const StyledBrowsingPage = styled.div`
       width: 100px;
 
       &:hover {
-        border: 3px;
+        border: 2px;
         border-style: solid;
+        background-color: ${({ theme }) => theme.colors.green};
+
         border-color: ${({ theme }) => theme.colors.green};
       }
     }
