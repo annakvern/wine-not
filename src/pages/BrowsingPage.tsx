@@ -17,7 +17,8 @@ export default function BrowsingPage() {
 
   const { data, isLoading, error } = useQuery({
     queryKey: ["drinks", searchLetter, isAlcoholic],
-    queryFn: () => fetchDrinksByLetter(searchLetter),
+    queryFn: () => fetchDrinksByLetter(searchLetter!),
+    enabled: !!searchLetter,
   });
 
   const executeSearch = (inputData: SearchForm) => {
