@@ -1,43 +1,27 @@
 import express, { Request, Response } from "express";
-import { spawn } from "child_process";
+import systembolaget from "systembolaget-api"; // Import the API as a library
 
 const app = express();
-const CLI_PATH = "/usr/local/bin/darwin_arm64"; // Ensure this is the correct path to your CLI tool
+const PORT = 5000;
 
-app.get("/api/assortment", (_req: Request, res: Response) => {
-  // Define your filters
-  const filters = ["--category", "Vin", "--limit", "10"];
+app.get("/api/assortment", async (req: Request, res: Response) => {
+  try {
+    console.log("📡 Fetching products from Systembolaget API...");
 
-  const process = spawn(CLI_PATH, ["assortment", ...filters]);
+    // Fetch products with filters
+    const products = await systembolaget.assortment({
+      category: "Vin", // Adjust this based on actual filter keys
+      assortmentText: "Fast sortiment", // Make sure this is valid
+    });
 
-  let output = "";
-
-  process.stdout.on("data", (data) => {
-    output += data.toString();
-  });
-
-  process.stderr.on("data", (data) => {
-    console.error(`⚠️ CLI Error: ${data.toString()}`);
-  });
-
-  process.on("close", (code) => {
-    if (code !== 0) {
-      return res
-        .status(500)
-        .json({ error: `CLI process exited with code ${code}` });
-    }
-
-    try {
-      const jsonData = JSON.parse(output);
-      return res.json(jsonData);
-    } catch (parseError) {
-      console.error("❌ JSON Parse Error:", parseError);
-      return res.status(500).json({ error: "Invalid JSON response from CLI" });
-    }
-  });
+    console.log(`✅ Fetched ${products.length} products`);
+    res.json(products.slice(0, 10)); // Limit to 10 results
+  } catch (error) {
+    console.error("❌ Error fetching products:", error);
+    res.status(500).json({ error: "Failed to fetch assortment" });
+  }
 });
 
-const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
 });
