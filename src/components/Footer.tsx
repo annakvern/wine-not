@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <p>Copyright 2025 Anna Kvernplassen</p>
-      <p>Wine Tasting for Darlings</p>
+      <p>Sip happens, just sip it.</p>
     </StyledFooter>
   );
 }

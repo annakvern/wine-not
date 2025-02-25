@@ -7,13 +7,13 @@ export default function LandingPage() {
         imageUrl="images/taste.png"
         headline="Drinks with sparkle!"
         fineprint="Twinkle twinkle little star"
-        linkTo="/"
+        linkTo="/my-favourites"
       />
       <Banner
         imageUrl="images/fav.png"
         headline="Can't decide?"
         fineprint="Let me decide for you..."
-        linkTo="/my-favourites"
+        linkTo="/random-drink"
       />
       <Banner
         imageUrl="images/browse.png"

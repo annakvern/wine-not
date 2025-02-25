@@ -19,7 +19,11 @@ export default function SipHappensLayout() {
   return (
     <ThemeProvider theme={theme}>
       <div
-        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+        }}
       >
         <GlobalStyles />
         <Header />

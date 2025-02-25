@@ -1,7 +1,6 @@
 import WineCard from "../components/DrinkCard";
 import { StyledMyFavouritesPage } from "../components/styles/MyFavouritesPage.styled";
 import { Container } from "../components/styles/Container.styled";
-import Button from "../components/Button";
 
 export default function MyFavouritesPage() {
   return (
@@ -76,9 +75,6 @@ export default function MyFavouritesPage() {
           />
         </Container>
       </section>
-      <div>
-        <Button>Back to home</Button>
-      </div>
     </StyledMyFavouritesPage>
   );
 }
