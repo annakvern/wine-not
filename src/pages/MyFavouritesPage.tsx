@@ -1,4 +1,4 @@
-import WineCard from "../components/WineCard";
+import WineCard from "../components/DrinkCard";
 import { StyledMyFavouritesPage } from "../components/styles/MyFavouritesPage.styled";
 import { Container } from "../components/styles/Container.styled";
 import Button from "../components/Button";

@@ -5,7 +5,7 @@ import NotFoundPage from "./pages/NotFoundPage.tsx";
 import WineNotStart from "./WineNotLayout.tsx";
 import LandingPage from "./pages/LandingPage.tsx";
 import MyFavouritesPage from "./pages/MyFavouritesPage.tsx";
-import TastingPage from "./pages/TastingPage.tsx";
+import TastingPage from "./pages/RandomDrinkPage.tsx";
 import BrowsingPage from "./pages/BrowsingPage.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 

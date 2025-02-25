@@ -1,4 +1,4 @@
-import { StyledWineCard } from "./styles/WineCard.styled";
+import { StyledDrinkCard } from "./styles/DrinkCard.styled";
 
 interface Props {
   imageUrl: string;
@@ -10,9 +10,9 @@ interface Props {
   volume: number;
   id: number;
 }
-export default function WineCard(props: Props) {
+export default function DrinkCard(props: Props) {
   return (
-    <StyledWineCard>
+    <StyledDrinkCard>
       <img src={props.imageUrl} alt={props.title}></img>
       <div>
         <h3>{props.title}</h3>
@@ -26,6 +26,6 @@ export default function WineCard(props: Props) {
           <span>{props.volume} %</span>
         </div>
       </div>
-    </StyledWineCard>
+    </StyledDrinkCard>
   );
 }
