@@ -7,7 +7,7 @@ export default function LandingPage() {
         imageUrl="images/taste.png"
         headline="Drinks with sparkle!"
         fineprint="Twinkle twinkle little star"
-        linkTo="/my-favourites"
+        linkTo="/sparkles"
       />
       <Banner
         imageUrl="images/fav.png"

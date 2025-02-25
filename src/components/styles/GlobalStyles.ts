@@ -21,8 +21,8 @@ body, #root {
 main {
   flex-grow: 1;
   display: flex;
-  justify-content: center; 
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 
   
  

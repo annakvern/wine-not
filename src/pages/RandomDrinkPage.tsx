@@ -11,6 +11,14 @@ export default function RandomDrinkPage() {
 
   return (
     <>
+      <h2
+        style={{
+          padding: "0",
+          marginTop: "2rem",
+        }}
+      >
+        I think you should sip on this one!
+      </h2>
       <StyledRandomDrinkPage>
         <div>
           {data?.drinks.map((drink) => (

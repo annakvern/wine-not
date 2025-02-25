@@ -50,3 +50,21 @@ export async function fetchDrinksByLetter(
   const data = await response.json();
   return data;
 }
+
+export async function fetchDrinksByIngredient(): Promise<{ drinks: Drink[] }> {
+  const response = await fetch(
+    "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Champagne",
+    {
+      headers: {
+        Accept: "application/json",
+      },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data;
+}

@@ -7,7 +7,7 @@ export const StyledRandomDrinkPage = styled.div`
   max-width: 70%;
   width: auto;
   height: auto;
-  margin: 2rem 0;
+  margin: 1rem 0 2rem 0;
   flex-grow: 0;
 
   p {
