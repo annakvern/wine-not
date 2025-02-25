@@ -35,7 +35,7 @@ export async function fetchDrinksByLetter(
   letter: string
 ): Promise<{ drinks: Drink[] }> {
   const response = await fetch(
-    "www.thecocktaildb.com/api/json/v1/1/search.php?f=${letter}",
+    `www.thecocktaildb.com/api/json/v1/1/search.php?f=${letter}`,
     {
       headers: {
         Accept: "application/json",
