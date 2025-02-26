@@ -28,6 +28,17 @@ export const StyledHeader = styled.header`
     font-size: 1.5rem;
     font-weight: bold;
     color: #efe7dd;
-    //color: #fffcf6;
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.8rem;
+    }
+    span {
+      font-size: 1rem;
+    }
+    img {
+      width: 75px;
+      height: 100px;
+    }
   }
 `;

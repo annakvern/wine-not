@@ -18,22 +18,14 @@ const theme = {
 export default function SipHappensLayout() {
   return (
     <ThemeProvider theme={theme}>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "100vh",
-        }}
-      >
-        <GlobalStyles />
-        <Header />
-        <Container>
-          <main>
-            <Outlet />
-          </main>
-        </Container>
-        <Footer />
-      </div>
+      <GlobalStyles />
+      <Header />
+      <Container>
+        <main>
+          <Outlet />
+        </main>
+      </Container>
+      <Footer />
     </ThemeProvider>
   );
 }

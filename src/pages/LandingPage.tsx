@@ -1,8 +1,9 @@
 import Banner from "../components/Banner";
+import { StyledLandingPage } from "../components/styles/LandingPage.styled";
 
 export default function LandingPage() {
   return (
-    <div>
+    <StyledLandingPage>
       <Banner
         imageUrl="images/taste.png"
         headline="Drinks with sparkle!"
@@ -21,6 +22,6 @@ export default function LandingPage() {
         fineprint="Find your favourite!"
         linkTo="/browse"
       />
-    </div>
+    </StyledLandingPage>
   );
 }

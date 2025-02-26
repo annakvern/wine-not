@@ -19,10 +19,14 @@ body, #root {
 }
 
 main {
-  flex-grow: 1;
+ flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+ 
 
   
  
