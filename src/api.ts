@@ -68,3 +68,14 @@ export async function fetchDrinksByIngredient(): Promise<{ drinks: Drink[] }> {
   const data = await response.json();
   return data;
 }
+
+export async function fetchDrinkDetails(drinkId: string) {
+  const response = await fetch(
+    `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkId}`
+  );
+  if (!response.ok) {
+    throw new Error("No drink details for you! Try again later.");
+  }
+  const data = await response.json();
+  return data.drinks[0];
+}

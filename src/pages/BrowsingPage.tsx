@@ -1,38 +1,13 @@
 import { useForm } from "react-hook-form";
 import { StyledBrowsingPage } from "../components/styles/BrowsingPage.styled";
-import { useQuery } from "@tanstack/react-query";
-import { fetchDrinksByLetter } from "../api";
-import { useState } from "react";
 import DrinkCard from "../components/DrinkCard";
 import Button from "../components/Button";
-
-interface SearchForm {
-  searchPhrase: string;
-  isAlcoholic: boolean;
-}
+import useDrink from "../hooks/useDrink";
+import { SearchForm } from "../hooks/useDrink";
 
 export default function BrowsingPage() {
   const { register, handleSubmit } = useForm<SearchForm>();
-
-  const [searchLetter, setSearchLetter] = useState<string>();
-  const [isAlcoholic, setIsAlcoholic] = useState<boolean>();
-
-  const { data, isLoading, error } = useQuery({
-    queryKey: ["drinks", searchLetter, isAlcoholic],
-    queryFn: () => fetchDrinksByLetter(searchLetter!),
-    enabled: !!searchLetter,
-  });
-
-  const executeSearch = (inputData: SearchForm) => {
-    if (!inputData.searchPhrase || inputData.searchPhrase.length !== 1) {
-      alert(
-        "Please only enter the first letter of the drink you're looking for, we'll get you the list!"
-      );
-      return;
-    }
-    setSearchLetter(inputData.searchPhrase);
-    setIsAlcoholic(inputData.isAlcoholic);
-  };
+  const { registerFields, executeSearch, data, isLoading, error } = useDrink();
 
   return (
     <>
@@ -60,7 +35,7 @@ export default function BrowsingPage() {
         <div className="drink-list">
           {data?.drinks
             ?.filter((drink) =>
-              isAlcoholic
+              registerFields.isAlcoholic
                 ? drink.strAlcoholic === "Alcoholic"
                 : drink.strAlcoholic === "Non alcoholic"
             )
