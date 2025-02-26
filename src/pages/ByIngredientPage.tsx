@@ -12,12 +12,11 @@ export default function ByIngredientPage() {
 
   return (
     <>
+      <h2>When in need of sparkles (always)...!</h2>
       <StyledByIngredientPage>
-        <section>
-          {data?.drinks.map((drink) => (
-            <DrinkCard key={drink.idDrink} drink={drink} />
-          ))}
-        </section>
+        {data?.drinks.map((drink) => (
+          <DrinkCard key={drink.idDrink} drink={drink} />
+        ))}
       </StyledByIngredientPage>
       <div>
         <Button>Back to home</Button>

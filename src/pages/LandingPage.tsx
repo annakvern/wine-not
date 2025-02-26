@@ -6,7 +6,7 @@ export default function LandingPage() {
     <StyledLandingPage>
       <Banner
         imageUrl="images/taste.png"
-        headline="Drinks with sparkle!"
+        headline="Need sparkles!"
         fineprint="Twinkle twinkle little star"
         linkTo="/sparkles"
       />

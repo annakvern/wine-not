@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledLandingPage = styled.div`
-  border: 2px solid red;
   width: 90%;
   max-width: 1200px;
   height: auto;
