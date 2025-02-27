@@ -7,6 +7,10 @@ export const StyledDrinkCard = styled.div`
   border-radius: 1rem;
   width: 21rem;
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   img {
     width: 100%;
   }

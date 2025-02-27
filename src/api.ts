@@ -1,9 +1,3 @@
-// Lookup a random cocktail
-// www.thecocktaildb.com/api/json/v1/1/random.php
-//Search cocktail by name
-// www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
-//
-
 export interface Drink {
   idDrink: string;
   strDrink: string;

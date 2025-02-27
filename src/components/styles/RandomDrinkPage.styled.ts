@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledRandomDrinkPage = styled.div`
   background-color: ${({ theme }) => theme.colors.creme};
-  padding: 1.5rem;
+
   border-radius: 1rem;
   max-width: 70%;
   width: auto;
