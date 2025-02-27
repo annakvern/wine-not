@@ -12,6 +12,7 @@ export const StyledDrinkDetailsPage = styled.div`
   }
   img {
     max-width: 500px;
+    width: 100%;
     border-radius: 1rem;
   }
   .detail-container {
@@ -31,6 +32,12 @@ export const StyledDrinkDetailsPage = styled.div`
 
     p {
       max-width: 300px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .detail-container {
+      flex-direction: column;
     }
   }
 `;
