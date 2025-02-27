@@ -24,7 +24,7 @@ export default function BrowsingPage() {
               id="alcoholic"
               {...register("isAlcoholic")}
             />{" "}
-            <label for="alcoholic">Alcoholic</label>
+            <label htmlFor="alcoholic">Alcoholic</label>
           </div>
           <button type="submit">Search</button>
         </form>

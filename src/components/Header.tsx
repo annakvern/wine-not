@@ -8,7 +8,7 @@ export default function Header() {
         <span>Sip happens, just sip it.</span>
       </div>
 
-      <img src="./images/logo.png" alt="logo"></img>
+      <img src="../images/logo.png" alt="logo"></img>
     </StyledHeader>
   );
 }

@@ -5,7 +5,7 @@ export const StyledBanner = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 2rem auto;
+  margin: 1rem auto;
   background-color: ${({ theme }) => theme.colors.creme};
   padding: 1rem;
   width: 100%;
