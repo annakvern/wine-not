@@ -2,25 +2,26 @@ import { PropsWithChildren } from "react";
 import { StyledButton } from "./styles/Button.styled";
 import { Link, useNavigate } from "react-router";
 
-export default function Button(props: PropsWithChildren) {
-  const reloadPage = () => {
-    window.location.reload();
-  };
+interface ButtonProps extends PropsWithChildren {
+  onClick?: () => void;
+}
+
+export default function Button({ children, onClick }: ButtonProps) {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
   };
 
-  if (props.children === "Back to home") {
+  if (children === "Back to home") {
     return (
       <Link to="/">
-        <StyledButton>{props.children}</StyledButton>
+        <StyledButton>{children}</StyledButton>
       </Link>
     );
   }
-  if (props.children === "Go back") {
-    return <StyledButton onClick={goBack}>{props.children}</StyledButton>;
+  if (children === "Go back") {
+    return <StyledButton onClick={goBack}>{children}</StyledButton>;
   }
 
-  return <StyledButton onClick={reloadPage}>{props.children}</StyledButton>;
+  return <StyledButton onClick={onClick}>{children}</StyledButton>;
 }
