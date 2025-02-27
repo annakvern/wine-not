@@ -24,8 +24,8 @@ export default function DrinkDetailsPage() {
 
       <StyledDrinkDetailsPage>
         <h3>
-          <i class="fa-regular fa-star"></i> {detailedDrink?.strDrink}{" "}
-          <i class="fa-regular fa-star"></i>
+          <i className="fa-regular fa-star"></i> {detailedDrink?.strDrink}{" "}
+          <i className="fa-regular fa-star"></i>
         </h3>
         <div className="detail-container">
           <img
@@ -37,11 +37,11 @@ export default function DrinkDetailsPage() {
               <strong>{detailedDrink?.strCategory}</strong>
             </p>
             <p>
-              <i class="fa-solid fa-spray-can-sparkles"></i> Type:{" "}
+              <i className="fa-solid fa-spray-can-sparkles"></i> Type:{" "}
               {detailedDrink?.strAlcoholic}
             </p>
             <p>
-              <i class="fa-solid fa-martini-glass-empty"></i> Glass:{" "}
+              <i className="fa-solid fa-martini-glass-empty"></i> Glass:{" "}
               {detailedDrink?.strGlass}
             </p>
             <h4>Ingredients:</h4>
@@ -64,6 +64,7 @@ export default function DrinkDetailsPage() {
       </StyledDrinkDetailsPage>
       <div>
         <Button>Back to home</Button>
+        <Button>Go back</Button>
       </div>
     </>
   );

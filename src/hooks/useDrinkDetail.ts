@@ -9,7 +9,7 @@ export interface SearchForm {
 export default function useDrinkDetail(drinkId?: string) {
   const [detailedDrink, setDetailedDrink] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string>(null);
+  const [error, setError] = useState<string>();
 
   useEffect(() => {
     if (!drinkId) {

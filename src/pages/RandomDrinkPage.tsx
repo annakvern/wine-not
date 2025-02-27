@@ -20,6 +20,7 @@ export default function RandomDrinkPage() {
       >
         I think you should sip on this one!
       </h2>
+
       <StyledRandomDrinkPage>
         <div>
           {data?.drinks.map((drink) => (
@@ -29,6 +30,7 @@ export default function RandomDrinkPage() {
       </StyledRandomDrinkPage>
       <div>
         <Button>Back to home</Button>
+        <Button>Try another one!</Button>
       </div>
     </>
   );
